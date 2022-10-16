@@ -4,6 +4,8 @@ from stellargraph import random
 from tensorflow import random as tf_random
 from numpy.random import seed
 seed(1)
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ### Use case 1 - Hetionet
 
@@ -86,9 +88,9 @@ Node_Lists = [['Dexamethasone', 'Betamethasone', 'Hydrocortisone', 'Mometasone']
 # Drug clustering (Deepwalk-SS)
 cluster_df = ClusteringDF(subgraph_dict_SS, node_list, label_true)
 tSNEplotSS(cluster_df, node_list, Node_Lists)
-plt.savefig('deepwalk_SS.png', dpi=400, bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('deepwalk_SS.png', dpi=400, bbox_inches='tight') #bbox_extra_artists=(lgd,),
 
 # Drug clustering (Deepwalk-NS)
 cluster_df = ClusteringDF(subgraph_dict_NS, node_list, label_true)
 tSNEplotNS(cluster_df, node_list, Node_Lists)
-plt.savefig('deepwalk_NS.png', dpi=400, bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('deepwalk_NS.png', dpi=400, bbox_inches='tight')

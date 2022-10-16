@@ -4,6 +4,8 @@ from stellargraph import random
 from tensorflow import random as tf_random
 from numpy.random import seed
 seed(1)
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ### Use case 1 - ROBOKOP
 
