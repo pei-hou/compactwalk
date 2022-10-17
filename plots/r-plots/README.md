@@ -10,7 +10,6 @@ Once Docker is up and running, run the following commands:
 docker build --rm --force-rm -t rocker/rstudio .
 
 docker run -d --rm -p 8787:8787 -e PASSWORD=mypassword --name r-plots rocker/rstudio
-
 ```
 
 After setting up the R-studio container, open your brower and link to "http://localhost:8787".
