@@ -12,6 +12,6 @@ cd compactwalk
 docker build -t compactwalk .
 docker run --rm -it -v "$(pwd)/plots:/plots" --name compactwalk-repro compactwalk
 ```
+## Plots
 
-To reproduce the plots that we created in R...
-**TODO add description of R plots**
+To reproduce the plots that we created by R, see instruction here: [/plots/r-plots](https://github.com/pei-hou/compactwalk/tree/main/plots/r-plots).
