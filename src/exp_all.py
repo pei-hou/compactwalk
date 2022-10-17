@@ -335,12 +335,12 @@ subgraph_dict_NS = subGsHetioDrugNS
 
 cluster_df = ClusteringDF(subgraph_dict_SS, node_list, label_true)
 tSNEplotSS(cluster_df, node_list, Node_Lists)
-plt.savefig('deepwalk_SS.png', dpi=400, bbox_inches='tight')
+plt.savefig('/plots/deepwalk_SS.png', dpi=400, bbox_inches='tight')
 
 # Drug clustering (Deepwalk-NS)
 cluster_df = ClusteringDF(subgraph_dict_NS, node_list, label_true)
 tSNEplotNS(cluster_df, node_list, Node_Lists)
-plt.savefig('deepwalk_NS.png', dpi=400, bbox_inches='tight')
+plt.savefig('/plots/deepwalk_NS.png', dpi=400, bbox_inches='tight')
 
 
 
