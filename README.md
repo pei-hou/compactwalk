@@ -8,9 +8,8 @@ Download and install [Docker](https://docs.docker.com/get-docker/). Once Docker 
 
 ```
 docker build -t compactwalk .
-
-docker run -it -v <path to repo>/plots:/plots --name my-running-app compactwalk
-
 ```
-Note that the <path to repo> needs to be changed to the directory of this repository.
-
+```
+docker run -it -v <path to repo>/plots:/plots --name my-running-app compactwalk
+```
+Note that the \<path to repo\> needs to be changed to the directory of this repository.
