@@ -260,12 +260,12 @@ for m in methods:
 G = "bolt://robokopkg.renci.org" 
 
 # node_list = a list of nodes of interest
-node_list = ['Alzheimer disease','dementia (disease)',
+node_list = ['Alzheimer disease','dementia',
 'type 2 diabetes mellitus','type 1 diabetes mellitus',
 'HIV infectious disease','AIDS',
-'heart disease','hypertensive disorder', 
+'heart disorder','hypertensive disorder', 
 'palsy','cerebral palsy', 
-'synovitis (disease)','rheumatoid arthritis',
+'synovitis','rheumatoid arthritis',
 'asthma','chronic obstructive pulmonary disease', 
 'fatty liver disease','non-alcoholic fatty liver disease',
 'migraine disorder','Headache'
@@ -281,9 +281,9 @@ metapaths = [['`biolink:DiseaseOrPhenotypicFeature`', '`biolink:PhenotypicFeatur
 compared_label = ["`biolink:DiseaseOrPhenotypicFeature`", "`biolink:PhenotypicFeature`", "`biolink:Gene`"]
 
 # True node-pairs to evaluate
-node_pair1 = ['Alzheimer disease','type 2 diabetes mellitus','HIV infectious disease','heart disease','palsy',
-              'synovitis (disease)','asthma','fatty liver disease','migraine disorder']
-node_pair2 = ['dementia (disease)','type 1 diabetes mellitus','AIDS','hypertensive disorder','cerebral palsy',
+node_pair1 = ['Alzheimer disease','type 2 diabetes mellitus','HIV infectious disease','heart disorder','palsy',
+              'synovitis','asthma','fatty liver disease','migraine disorder']
+node_pair2 = ['dementia','type 1 diabetes mellitus','AIDS','hypertensive disorder','cerebral palsy',
               'rheumatoid arthritis','chronic obstructive pulmonary disease','non-alcoholic fatty liver disease','Headache']
 
 # biulding Subgraphs (SS & NS)
